@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 // with default in axios
-// import instance from "./axios";
 import axios from "axios";
 import YouTube from "react-youtube";
 import movieTrailer from "movie-trailer";
@@ -16,12 +15,8 @@ export default function Row({ title, fetchUrl, isLargeRow }) {
   useEffect(() => {
     async function fetchData() {
       const request = await axios.get(base_Url + fetchUrl);
-
-      // const request = await axiosInstance.get(fetchUrl);
-      // console.log(request);
       setMovies(request.data.results);
       // console.log(request.data.results);
-      // alert("here");
       return request;
     }
     fetchData();
@@ -49,7 +44,7 @@ export default function Row({ title, fetchUrl, isLargeRow }) {
         .catch((error) => console.log(error));
     }
   };
-  console.log(movies);
+  // console.log(movies);
   return (
     <div>
       <h2>{title}</h2>
