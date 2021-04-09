@@ -1,3 +1,5 @@
+// Courtesy TMDB Movie database API
+
 const API_KEY = "f1f50d42b515c8ba85e1478b56a4d418";
 
 const requests = {
