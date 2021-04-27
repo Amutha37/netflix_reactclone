@@ -47,7 +47,7 @@ export default function Row({ title, fetchUrl, isLargeRow }) {
   // console.log(movies);
   return (
     <div>
-      <h2>{title}</h2>
+      <h3>{title}</h3>
       <div className="row_posters">
         {/* several row of movies */}
         {movies.map((movie) => (
@@ -56,10 +56,13 @@ export default function Row({ title, fetchUrl, isLargeRow }) {
             onClick={() => handleClick(movie)}
             // use conditional setting for which class name to use for specific type of image
             className={`row_poster ${isLargeRow && "row_posterLarger"}`}
+            //
             src={`${base_url}${
               isLargeRow ? movie.poster_path : movie.backdrop_path
             }`}
-            alt={movie.name}
+            title={movie.title || movie.name}
+            alt={movie.title || movie.name}
+            vote={movie.vote_average}
           />
         ))}
       </div>
