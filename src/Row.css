@@ -27,22 +27,13 @@ h3 {
   max-height: 100px;
   margin-right: 10px;
   transition: transform 45ms;
-  /* background: rgba(0, 0, 0, 0.6); */
 }
 
 .row_poster:hover {
   transform: scale(1.08);
   cursor: pointer;
   content: attr(title);
-  background: rgba(0, 0, 0, 0.6);
-  width: 100%;
   color: #fff;
-
-  text-align: center;
-  z-index: 1;
-  bottom: 0;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
 }
 .row_posterLarger {
   max-height: 250px;
