@@ -52,8 +52,6 @@ export default function Row({ title, fetchUrl }) {
   const opts = {
     height: "448",
     width: "100%",
-    // object-fit: contain,
-    // height: 448px\,
     playerVars: {
       autoplay: 1,
     },
@@ -110,27 +108,5 @@ export default function Row({ title, fetchUrl }) {
         )}
       </div>
     </header>
-    // <header
-    //   className="banner"
-    //   style={{
-    //     backgroundImage: `url("${base_url}${movie?.backdrop_path}")`,
-    //     backgroundPosition: "center",
-    //     backgroundSize: "cover",
-    //     backgroundRepeat: "no-repeat",
-    //   }}
-    // >
-    //   <div className="banner_contents">
-    //     <h1 className="banner_title">
-    //       {movie?.title || movie?.name || movie?.original_name}
-    //     </h1>
-    //     <div className="banner_buttons">
-    //       <button className="banner_button">Play </button>
-    //       <button className="banner_button">My List </button>
-    //     </div>
-
-    //     <h1 className="banner_description">{truncate(movie?.overview, 150)}</h1>
-    //   </div>
-    //   <div className="banner--fadeBottom"></div>
-    // </header>
   );
 }

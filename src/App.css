@@ -3,4 +3,22 @@
 }
 .app {
   background-color: #181818;
+  /* height: 100%; */
+  /* width: 12px; */
+  /* background: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.61),
+    #111
+  ); */
 }
+#rightshade {
+  position: absolute;
+  right: 0px;
+  width: 0px;
+  height: 846px;
+  border: 30px solid rgba(223, 44, 44, 0.61);
+}
+/* transparent,
+rgba(37, 37, 37, 0.61),
+#111 */

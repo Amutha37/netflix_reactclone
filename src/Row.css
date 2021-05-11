@@ -35,6 +35,9 @@ h3 {
   /* content: attr(title);
   color: #fff; */
 }
+.row_poster {
+  max-height: 150px;
+}
 .row_posterLarger {
   max-height: 250px;
 }

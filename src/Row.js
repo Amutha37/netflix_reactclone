@@ -18,7 +18,6 @@ export default function Row({ title, fetchUrl, isLargeRow }) {
     async function fetchData() {
       const request = await axios.get(base_Url + fetchUrl);
       setMovies(request.data.results);
-      // console.log(request.data.results);
       return request;
     }
     fetchData();
@@ -74,4 +73,3 @@ export default function Row({ title, fetchUrl, isLargeRow }) {
     </div>
   );
 }
-//  <h2>{title}</h2>
