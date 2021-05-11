@@ -59,8 +59,11 @@ export default function Row({ title, fetchUrl, isLargeRow }) {
             onClick={() => handleClick(movie)}
             // use conditional setting for which class name to use for specific type of image
             className={`row_poster ${isLargeRow && "row_posterLarger"}`}
+            // src={`${base_url}${
+            //   isLargeRow ? movie.poster_path : movie.backdrop_path
+            //   }`}
             src={`${base_url}${
-              isLargeRow ? movie.poster_path : movie.backdrop_path
+              isLargeRow ? movie.poster_path : movie.poster_path
             }`}
             title={movie.title || movie.name}
             alt=""

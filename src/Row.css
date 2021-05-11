@@ -32,8 +32,8 @@ h3 {
 .row_poster:hover {
   transform: scale(1.08);
   cursor: pointer;
-  content: attr(title);
-  color: #fff;
+  /* content: attr(title);
+  color: #fff; */
 }
 .row_posterLarger {
   max-height: 250px;
